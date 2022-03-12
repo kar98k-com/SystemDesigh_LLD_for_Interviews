@@ -7,6 +7,6 @@ String name;
 public static void main(String[] args) {
     Oops t1= new Oops();                    //  create object to the class to access field
     System.out.println(t1.id);                    //these are methods
-    System.out.println(t1.name);
+    System.out.println(t1.name);                     // in main method
 }
 }
