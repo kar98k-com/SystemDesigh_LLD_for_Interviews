@@ -46,6 +46,23 @@ class Class_Two{
     }
 }  
  
+ initialization through methods
  
+ 
+ class Class_one{
+    int id;           // class 1
+    String name;
+    void Print_name(int i,String n){
+        id=i;
+        name=n;
+        System.out.println(i+" "+n);
+    }
+}
+class Class_Two{
+    public static void main(String[] args) {
+        Class_one c= new Class_one();            //class 2
+        c.Print_name(100, "java");
+    }
+}  
  
  
