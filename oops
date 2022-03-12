@@ -27,3 +27,25 @@ class Class_Two{
         System.out.println(c.name);  //  accessing the field of another class 
     }
 }
+ 
+ 
+ initialization of objects to some values
+ 
+ 
+ class Class_one{
+    int id;           // class 1
+    String name;
+}
+class Class_Two{
+    public static void main(String[] args) {
+        Class_one c= new Class_one();            //class 2
+        c.id=100;
+        c.name="java";
+        System.out.println(c.id);
+        System.out.println(c.name);  //  initialization of object
+    }
+}  
+ 
+ 
+ 
+ 
