@@ -1,5 +1,6 @@
 class and objects
 
+in the same class
 
 class Oops{
 int id;     //these are fields
@@ -9,4 +10,20 @@ public static void main(String[] args) {
     System.out.println(t1.id);                    //these are methods
     System.out.println(t1.name);                     // in main method
 }
+}
+
+outside the class 
+
+
+
+class Class_one{
+    int id;           // class 1
+    String name;
+}
+class Class_Two{
+    public static void main(String[] args) {
+        Class_one c= new Class_one();            //class 2
+        System.out.println(c.id);
+        System.out.println(c.name);  //  accessing the field of another class 
+    }
 }
