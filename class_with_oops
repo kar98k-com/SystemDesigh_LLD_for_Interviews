@@ -1,0 +1,18 @@
+calcute area of rectangle 
+class Rectangle{
+    int length;
+    int widgth;
+    void Calculte_area(int l,int w){
+        length=l;
+        widgth=w;
+        System.out.println(length+" "+widgth);
+    }
+}
+class DriveRectangle{
+    public static void main(String[] args) {
+        Rectangle r1=new Rectangle();
+        Rectangle r2=new Rectangle();
+        r1.Calculte_area(10, 100);
+        r2.Calculte_area(90, 78);
+    }
+}
