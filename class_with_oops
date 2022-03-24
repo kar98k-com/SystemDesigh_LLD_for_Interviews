@@ -16,3 +16,43 @@ class DriveRectangle{
         r2.Calculte_area(90, 78);
     }
 }
+
+design bank account for the user
+
+
+class Account{
+    int accountnumber;
+    int amount;
+    String name;
+    void insert(int ac,int i,String s){
+        accountnumber=ac;
+        amount=i;
+        name=s;
+    }
+    void balanceCheck(){
+        System.out.println(amount);
+    }
+    void deposit(int money){
+        amount=amount+money;
+        System.out.println(money+" "+"is credited into your account");
+    }
+    void withdraw(int amt){
+        if(amt>amount){
+            System.out.println("the is not sufficient in your account");
+        }else{
+            amount=amount-amt;
+        }
+    }
+
+}
+class k{
+    public static void main(String[] args) {
+        Account ac =new Account();
+        ac.insert(101,100, "java");
+        ac.balanceCheck();
+        ac.deposit(900);
+        ac.balanceCheck();
+        ac.withdraw(500);
+        ac.balanceCheck();
+    }
+}
